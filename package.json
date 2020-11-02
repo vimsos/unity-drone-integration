@@ -1,0 +1,16 @@
+{
+    "name": "com.github.vvwvin.unity-drone-integration",
+    "version": "0.1.0",
+    "displayName": "Drone CI Integration",
+    "description": "Drone CI integration for Unity3D",
+    "unity": "2019.4",
+    "dependencies": {},
+    "keywords": [
+        "continuous integration",
+        "drone"
+    ],
+    "author": {
+        "name": "vvwvin",
+        "url": "https://github.com/vvwvin/unity-drone-integration"
+    }
+}
