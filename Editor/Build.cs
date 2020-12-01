@@ -46,7 +46,10 @@ namespace Drone
                     break;
             }
 
-            File.WriteAllText($"Assets/Resources/build.txt", buildName);
+            var buildFilePath = "Assets/Resources/build.txt";
+            if (File.Exists(buildFilePath))
+            { File.WriteAllText(buildFilePath, buildName); }
+
             var report = BuildPipeline.BuildPlayer(buildPlayerOptions);
 
             if (report.summary.result != BuildResult.Succeeded)
